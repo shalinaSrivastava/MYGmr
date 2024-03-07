@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ProfileFragment"
+    android:background="@color/purple_700">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/eightdp"
+        android:layout_marginLeft="@dimen/eightdp"
+        android:layout_marginRight="@dimen/eightdp"
+        android:layout_marginTop="@dimen/eightdp"
+        android:layout_marginStart="@dimen/eightdp"
+        android:layout_marginEnd="@dimen/eightdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgUserProfile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/default_maxpe_profile"
+                    app:civ_border_color="#22adadad"
+                    app:civ_border_overlay="false"
+                    app:civ_border_width="0dp" />
+
+                <ImageView
+                    android:id="@+id/imgAddProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgUserProfile"
+                    android:layout_marginLeft="-54dp"
+                    android:layout_marginTop="-52dp"
+                    android:layout_toRightOf="@id/imgUserProfile"
+                    android:background="@drawable/add_image_bg"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_pencil_edit_button"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/username"
+                android:textStyle="bold"
+                android:textColor="#404040"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvUserEmail"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/emailid"
+                android:textColor="#404040"
+                android:visibility="gone"
+                android:textSize="@dimen/fourteensp" />
+
+            <TextView
+                android:id="@+id/tvUserMob"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/mobilenumber"
+                android:textColor="#505050"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/llMinKycData"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fourteensp"
+                    android:padding="4dp"
+                    android:background="@drawable/layoutshape"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvUpdateLimit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:textColor="#696969"
+                        android:gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text="Your Wallet Limits : 10,000/Month"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvValidDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginRight="@dimen/sixteendp"
+                        android:text="Valid till 31 July 2019"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="@dimen/sixteendp"
+                        android:layout_marginRight="@dimen/sixteendp"
+                        android:text="Complete your KYC to increase wallet limit upto 1 lakh/month &amp; get more benefits"
+                        android:textSize="@dimen/twelvesp" />
+
+                    <Button
+                        android:id="@+id/btnFullKyc"
+                        android:text="Complete KYC"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:background="@drawable/flightbndesign"
+                        android:textColor="@color/QRCodeWhiteColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="@dimen/sixteendp"
+                        android:layout_marginRight="@dimen/sixteendp"
+                        android:layout_marginBottom="16dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llKycCompleted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/twelvedp"
+                    android:padding="8dp"
+                    android:visibility="gone"
+                    android:background="@drawable/layoutshape"
+                    android:orientation="vertical">
+
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal">
+
+                        <ImageView android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_succes_checked"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:text="You have done your KYC"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="@dimen/sixteendp"
+                        android:layout_marginRight="@dimen/sixteendp"
+                        android:text="Your wallet limit upto 1 lakh/month. If you want to change your KYC Detail Contact Us"
+                        android:textSize="@dimen/fourteensp" />
+
+                    <TextView
+                        android:id="@+id/tvValidFullKyc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="@dimen/sixteendp"
+                        android:layout_marginRight="@dimen/sixteendp"
+                        android:text="Valid till 31 July 2019"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvMyQrCode"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_marginTop="@dimen/thirtydp"
+                android:gravity="left|center_vertical"
+                android:text="My QR Code"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="?attr/selectableItemBackground"
+                android:drawableLeft="@drawable/scan_overflow_profile"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right"
+                android:drawablePadding="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="@dimen/sixteensp"
+                android:layout_marginBottom="8dp"/>
+
+
+            <View android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="0.5dp"
+                android:background="@color/color_gray"/>
+
+            <TextView
+                android:id="@+id/tvPersonalDetails"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:gravity="left|center_vertical"
+                android:text="Personal Detail"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="?attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right"
+                android:drawablePadding="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="@dimen/sixteensp"
+                android:layout_marginBottom="8dp"/>
+
+            <View android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="0.5dp"
+                android:background="@color/color_gray"/>
+
+            <TextView
+                android:id="@+id/tvMyAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="?attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_agenda"
+                android:drawablePadding="20dp"
+                android:layout_marginBottom="@dimen/twentydp"
+                android:gravity="left|center_vertical"
+                android:text="My Address"
+                android:textSize="@dimen/sixteensp" />
+            <TextView
+                android:id="@+id/tvTearmCondion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="?attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_agenda"
+                android:drawablePadding="20dp"
+                android:layout_marginBottom="@dimen/twentydp"
+                android:gravity="left|center_vertical"
+                android:text="Terms &amp; Conditions"
+                android:textSize="@dimen/sixteensp" />
+
+
+            <View android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_gray"/>
+            <TextView
+                android:id="@+id/tvUserNameUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="?attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="20dp"
+                android:layout_marginBottom="@dimen/twentydp"
+                android:gravity="left|center_vertical"
+                android:text="Profile"
+                android:textSize="@dimen/sixteensp" />
+
+
+            <View android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_gray"/>
+
+            <TextView
+                android:id="@+id/tvlogout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourtydp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="?attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_baseline_login_24"
+                android:drawablePadding="20dp"
+                android:layout_marginBottom="@dimen/twentydp"
+                android:gravity="left|center_vertical"
+                android:text="Logout"
+                android:textSize="@dimen/sixteensp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

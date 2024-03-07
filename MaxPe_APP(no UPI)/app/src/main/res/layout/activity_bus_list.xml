@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/purple_700"
+    tools:context=".travel.BusListActivity">
+
+    <RelativeLayout
+        android:id="@+id/_mtoolbar_lay"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/_back"
+            android:fontFamily="@font/p6"
+            android:gravity="center|left"
+            android:padding="@dimen/_3sdp"
+            android:text=" Kasmiri get to Panchkula "
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/_back"
+            android:fontFamily="@font/p6"
+            android:gravity="center|left"
+            android:padding="@dimen/_3sdp"
+            android:text="3/01/2021"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/purple_200"
+        android:layout_height="1dp"></View>
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"></ProgressBar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/busList"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/bus_noResult"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:text="Oops! No results found for your search\n We Suggest you to modify your search"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+</LinearLayout>

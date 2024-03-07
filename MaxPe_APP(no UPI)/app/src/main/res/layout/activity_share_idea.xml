@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ShareIdeaActivity"
+    android:background="@color/purple_700">
+
+    <LinearLayout
+        android:id="@+id/llshare"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_700">
+
+        <ImageView
+            android:id="@+id/imgBackShareIdea"
+            android:layout_width="28dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_back_24"/>
+
+        <TextView
+            android:id="@+id/tvContestName"
+            android:text="Share Idea"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/llshare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linear"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/eightdp"
+                    android:gravity="center"
+                    android:textSize="@dimen/sixteensp"
+                    android:textStyle="normal"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/sixteendp"
+                    android:text="@string/sharemessage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/eightdp"
+                    android:gravity="center"
+                    android:textSize="@dimen/sixteensp"
+                    android:textStyle="normal"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/sixteendp"
+                    android:text="@string/sharemessageHindi" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourtydp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="12dp"
+                    android:padding="@dimen/_5sdp"
+                    android:drawableRight="@drawable/arrow_down_gray"
+                    app:tint="@color/green"
+                    android:background="@drawable/stroke_green"
+                    android:gravity="left|center_vertical"
+                    android:hint="   Idea Related to"
+                    android:textSize="@dimen/sixteensp" />
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/sharemessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/eightdp"
+                android:visibility="visible"
+                android:minLines="20"
+                android:maxLines="15"
+                android:ems="10"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/layoutshape"
+                android:inputType="textMultiLine"
+                android:hint="@string/sharehint"
+                android:gravity="top" />
+
+            <Button
+                android:id="@+id/btnShareIdeaSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/twentydp"
+                android:layout_marginBottom="@dimen/twentydp"
+                android:background="@drawable/flightbndesign"
+                android:text="Share"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_gravity="center_horizontal"
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+                    app:elevation="0dp"
+            android:src="@drawable/rightarrow" />-->
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

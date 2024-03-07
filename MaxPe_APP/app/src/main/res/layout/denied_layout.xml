@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_700">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:filterTouchesWhenObscured="true"
+        android:background="@color/purple_700">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/tvCancelRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login from other device"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:paddingTop="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingLeft="18dp"/>
+                <TextView
+                    android:id="@+id/tvCancelRequest2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="If its not you please contact to our MaxPe support 011-41411207 or support@ecomaxgo.in"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="18dp"
+                    android:paddingLeft="18dp"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvLogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ok"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@drawable/add_money_bg"
+                        android:textStyle="bold"
+                        android:layout_margin="8dp"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:paddingLeft="46dp"
+                        android:paddingRight="46dp"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".travel.SeatDetailActivity">
+    <RelativeLayout
+        android:id="@+id/_bar_lay"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/_bdBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="7dp"
+            android:src="@drawable/ic_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/_bbtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/_bdBack"
+            android:fontFamily="@font/p6"
+            android:gravity="center|left"
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lowerSeat"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/_bar_lay"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Lower"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/uperSeat"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="180dp"
+        android:layout_below="@+id/_bar_lay"
+        android:gravity="center"
+        android:layout_toRightOf="@id/lowerSeat"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:padding="3dp"
+        android:text="Upper"
+        android:layout_height="40dp"/>
+
+<LinearLayout
+    android:id="@+id/lower"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/lowerSeat"
+    android:layout_margin="20dp"
+    android:background="@drawable/stroke_gray"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layoutSeat_lower"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp">
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="30dp"
+        android:src="@drawable/ic_steering_wheel_12"
+      android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="2dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/uper"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lowerSeat"
+        android:layout_margin="20dp"
+        android:background="@drawable/stroke_gray"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/uperSeat_lay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical"
+            android:padding="@dimen/_12sdp">
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/ic_steering_wheel_12"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

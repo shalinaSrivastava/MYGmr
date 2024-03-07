@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">MaxPe</string>
+
+
+    <string name="govIndiaInt">Government of India Initiative</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lost">Lost \u0026 Found</string>
+
+    <string name="home">Home</string>
+    <string name="homedesc">MaxPe features</string>
+    <string name="profile">My Profile</string>
+    <string name="profiledesc">Name, Password Changes</string>
+    <string name="history">History</string>
+    <string name="historydesc">Transactions detail</string>
+    <string name="waste">Waste Detail</string>
+    <string name="wastedesc">Kiosk Transactions detail</string>
+    <string name="contest">Contest</string>
+    <string name="contestdesc">Max Pay Contests</string>
+    <string name="refer">Refer</string>
+    <string name="referdesc">Invite Freinds, Collegue</string>
+    <string name="miles">Miles</string>
+
+    <string name="miledesc">Spend to get Points</string>
+    <string name="support">Customer Support</string>
+    <string name="supportdec">24*7 Customer help desk</string>
+    <string name="booking">Booking History</string>
+    <string name="bookingdesc">Bus, Flight, Cab</string>
+    <string name="qrpay">MaxPe QR Code</string>
+    <string name="qrpaydesc">Scan QR code to pay</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="Privacydesc">App terms \u0026 Conditions</string>
+    <string name="logout">Logout</string>
+    <string name="logoutdesc">Back to login</string>
+    <string name="addmoney">Add Money</string>
+    <string name="version">Version 4.3.4</string>
+    <string name="username">User Name</string>
+    <string name="emailid">Email Id</string>
+    <string name="name">Name</string>
+    <string name="fname">First Name</string>
+    <string name="mname">Middle Name</string>
+    <string name="lname">Last Name</string>
+    <string name="gender">Gender</string>
+    <string name="BirthDate">Birth Date</string>
+    <string name="mobilenumber">Mobile Number</string>
+
+    <string name="text">By proceeding, you agree to our</string>
+    <string name="terms"><u>Terms &amp; Conditions</u></string>
+    <string name="term"><u>term &amp; condition</u></string>
+    <string name="term_privacy"> <u>Privacy Policy </u></string>
+   <!-- <string name="quiz_rulz">* Timing :- 12:00 - 12:01 PM and 18:00 - 18:01 \n* Winning Prize :- ₹ 100 \n*
+        First right  answer wins</string>-->
+    <string name="quiz_rulz">* Timing :- 12:00 - 12:01 PM and 18:00 - 18:01 \n* First right answer wins
+    ₹ 1</string>
+
+
+
+    <string name="quizNote">Note :- Quiz happen twice in a day</string>
+
+    <string name="hyperlink_term">By proceeding, you agree to our \n<a href="https://newapi.maxpaywallet.com/walletTerm.html">term &amp; condition</a></string>
+    <string name="navigation_drawer_open">Open Drawer</string>
+    <string name="navigation_drawer_close">Close Drawer</string>
+    <string name="notificatins">Notification</string>
+    <string name="noNotfMsg">No New Notification</string>
+    <string name="amount">Amount (\u20B9)</string>
+    <string name="sharehint">Share your Idea with us....</string>
+    <string name="balance0inr">Balance : 0 INR</string>
+    <string name="app_version">4.3.4</string>
+
+    <string name="Rs">\u20B9</string>
+    <string name="sharemessage">Share an idea or a service that will help is to improve, if we like it, you get Rs 1000</string>
+    <string name="sharemessageHindi">एक विचार या सेवा साझा करें जो सुधार करने में मदद करेगी, अगर हम इसे पसंद करते हैं, तो आपको 1000 रुपये मिलेगी हैं</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="error">Please enter</string>
+
+    <string name="bus">Bus</string>
+    <string name="flight">Flights</string>
+    <string name="hotel">Hotel</string>
+
+    <string name="onlinebus">ONLINE BUS TICKETS</string>
+    <string name="hotel_subtitle">SAME HOTEL, CHEAPEST PRICE, GUARENTEED</string>
+
+</resources>

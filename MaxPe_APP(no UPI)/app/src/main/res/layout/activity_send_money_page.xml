@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_700"
+    android:filterTouchesWhenObscured="true"
+    tools:context=".addmoney.SendMoneyPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_700">
+
+        <ImageView
+            android:id="@+id/imgBackAddMoney"
+            android:layout_width="28dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_back_24"/>
+
+        <TextView
+            android:text="Send Money"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAvailableAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="MaxPe Balance 1000.00"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/twentydp"
+        android:padding="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/llmobLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+            <TextView
+                android:id="@+id/tvCountryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/black"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_toRightOf="@+id/tvCountryCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgGetContacts"
+            style="@style/Widget.Design.TextInputLayout">
+
+            <EditText
+                android:id="@+id/edtMobNumber"
+                android:layout_height="match_parent"
+                android:hint="Register Mobile Number"
+                android:layout_width="match_parent"
+                android:drawablePadding="5dp"
+                android:padding="14dp"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:text=""/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imgGetContacts"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_contacts_24" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/black"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextField"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        style="@style/Widget.Design.TextInputLayout">
+
+        <EditText
+            android:id="@+id/edtSendAmount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/amount"
+            android:maxLength="6"
+            android:inputType="number"
+            android:padding="14dp"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_gray"
+            android:textSize="16dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/black"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvFundTransferLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Fund Transfer limit 1000.00"
+        android:textColor="@color/QRCodeBlackColor"
+        android:textSize="10sp"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginRight="@dimen/twentydp"
+        android:paddingLeft="@dimen/sixdp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnSendMoney"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:layout_marginTop="@dimen/fourtydp"
+            android:layout_marginRight="@dimen/twentydp"
+            android:layout_marginBottom="@dimen/twentydp"
+            android:background="@drawable/flightbndesign"
+            android:text="Send"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/act"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pay to"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:layout_marginRight="30dp"/>
+
+                <ImageView
+                    android:id="@+id/status"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_check_circle_24"
+                    tools:ignore="VectorDrawableCompat"
+                    android:translationX="-20dp"
+                    app:tint="@color/purple_200"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DHARA GAURANG THAKKAR"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xber@axis"
+                    android:textColor="@color/purple_200"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ "
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/amt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textColor="@color/black"
+                        android:textSize="28dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Txn Id"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/grey"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txnid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AXId33962e760c54841a0a674ddd9ee6f92"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Txn Date"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/grey"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20/09/2021 11:47:21 AM"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:id="@+id/txndate"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Query id"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/grey"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23131285289"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:id="@+id/qryid"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Query Date"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/grey"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24/09/21 13:47:31"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:id="@+id/qrydate"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Query Status"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/grey"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:id="@+id/qrystatus"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Query"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/grey"
+                    android:gravity="right"
+                    android:textSize="13dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ook"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:id="@+id/qry"
+                    />
+
+
+            </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your account has already been credited back, please check your account statement"
+                    android:textColor="@color/orange"
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:id="@+id/qrycmt"
+                    />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greyl" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

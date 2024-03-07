@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_700"
+    android:filterTouchesWhenObscured="true"
+    tools:context=".quiz.QuizQuestPage">
+
+    <RelativeLayout
+        android:id="@+id/llDailyQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_700">
+
+        <ImageView
+            android:id="@+id/imgDailyQuiz"
+            android:layout_width="28dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/imgDailyQuiz"
+            android:text="Play  Quiz"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/llDailyQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Quiz gif on page when quiz is Over...-->
+            <LinearLayout
+                android:id="@+id/linearOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/llQuizInfo">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Congratulations"
+                    android:textColor="@color/yellow"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="YOU WON"
+                    android:textColor="@color/price_red"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <!--Quiz Note and rulz...-->
+            <LinearLayout
+                android:id="@+id/llQuizInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"
+                android:background="@color/purple_200"
+                android:orientation="vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Quiz 12:00 - 12:01 PM and 18:00 - 18:01 cash instant every time"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:lineSpacingExtra="3dp"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWinnerQuiz"
+                android:layout_below="@+id/linearOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlQuinWinnerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/linearWinnerLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginLeft="10dp">
+
+
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imgUserProfileQuiz"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                app:civ_border_width="5dp"
+                                app:civ_border_color="@color/purple_200"
+                                android:src="@drawable/personicon" />
+
+                        <TextView
+                            android:id="@+id/tvUsernameQuiz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:lines="1"
+                            android:paddingTop="10dp"
+                            android:text="Rakesh"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:lines="1"
+                            android:paddingTop="5dp"
+                            android:text="300"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvQuizParticipate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_toRightOf="@+id/linearWinnerLayout"
+                                android:padding="4dp" />
+
+                    <TextView
+                        android:text="Oops.... you were so closed."
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:layout_below="@+id/rvQuizParticipate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:visibility="gone"
+                    android:id="@+id/cvQuizTimerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/llTimerLayout"
+                        android:visibility="visible"
+                        android:background="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/tvNextQuizText"
+                            android:text="Next Quiz at 6 PM"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tvNextQuizTimer"
+                                android:text="10:14:45"
+                                android:padding="2dp"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textColor="#FFFFFF"
+                                android:layout_marginLeft="12dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlQuizValue"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/llWinnerQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvQuizQuestLayout"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="12dp"
+                    android:visibility="gone"
+                    android:layout_margin="6dp"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Question of the day"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"/>
+                        <TextView
+                            android:id="@+id/tvQuizQuest"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:textColor="#505050"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioGroup
+                            android:id="@+id/rgQuizGroup"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/quiz1"
+                                android:textStyle="normal"
+                                android:textSize="15sp"
+                                android:paddingLeft="3dp"
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/quiz2"
+                            android:layout_alignParentRight="true"
+                            android:textStyle="normal"
+                            android:layout_marginRight="8dp"
+                            android:textSize="15sp"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="3dp"
+                            android:layout_weight="1"
+                            android:paddingBottom="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                            <RadioButton
+                                android:id="@+id/quiz3"
+                                android:textStyle="normal"
+                                android:textSize="15sp"
+                                android:paddingLeft="3dp"
+                                android:paddingTop="3dp"
+                                android:layout_weight="1"
+                                android:paddingBottom="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <RadioButton
+                                android:id="@+id/quiz4"
+                                android:layout_alignParentRight="true"
+                                android:textStyle="normal"
+                                android:layout_marginRight="8dp"
+                                android:textSize="15sp"
+                                android:paddingLeft="3dp"
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                        </RadioGroup>
+                            <RadioGroup
+                                android:id="@+id/radioRroupTwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/btnAllreayAns"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="20dp"
+                        android:background="#aa9fc438"
+                        android:filterTouchesWhenObscured="true"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:text="You already answered,\nwait for next quiz"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvQuizQuesMsgtLayout"
+                    android:layout_below="@+id/cvQuizQuestLayout"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    app:cardCornerRadius="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvQuizFailedText"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/tvTimingQuizText"
+                            android:textSize="16sp"
+                            android:layout_marginTop="14dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btnQuizQuestValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/flightbndesign"
+                    android:textSize="@dimen/eighteensp"
+                    android:visibility="gone"
+                    android:filterTouchesWhenObscured="true"
+                    android:layout_below="@+id/cvQuizQuesMsgtLayout"
+                    android:textColor="@color/QRCodeWhiteColor"
+                    android:layout_margin="20dp"
+                    android:text="Lock your answer"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvQuizAnswered"
+                android:padding="8dp"
+                android:text="Oops....\nYou missed it.\nBetter luck next time\n"
+                android:background="@color/lightgreen"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="60dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

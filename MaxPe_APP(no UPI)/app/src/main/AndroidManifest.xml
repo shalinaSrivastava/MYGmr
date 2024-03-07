@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.max.ecomaxgo.maxpe">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- Use this permission for reading Barcode Scanner -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".config.DexApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaxPe"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon, android:allowBackup">
+        <activity
+            android:name=".travel.FlightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".travel.HotelPreCheck"
+            android:exported="false" />
+        <activity
+            android:name=".travel.HotelListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".travel.HotelSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".travel.BookSeatActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".travel.SeatDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".travel.BusListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".travel.BusActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".expenses.ExpensesActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.ProfileDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dashboad.share.IdeaShareActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dashboad.ShareDialog"
+            android:exported="true" />
+        <activity
+            android:name=".travel.TravelCardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashboadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dashboad.lostfound.LostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dashboad.lostfound.FoundActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dashboad.lostfound.LFCategoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MenuContainerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.ShareIdeaActivity"
+            android:exported="true" />
+        <activity android:name=".dth.BillPaymentSuccess" />
+        <activity android:name=".addmoney.AddMoneyActivity" />
+        <activity android:name=".paybill.PaybillActivity" />
+        <activity android:name=".water.WaterActivity" />
+        <activity android:name=".gas.GasActivity" />
+        <activity android:name=".electricity.ElectricityActivity" />
+        <activity android:name=".dth.BbpsBillerActivity" />
+        <activity android:name=".view.DebitCardActivity" />
+        <activity android:name=".view.UserProifle" />
+        <activity android:name=".quiz.QuizQuestPage" />
+        <activity
+            android:name=".dashboad.lostfound.LostFoundActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".addmoney.SendSuccessfulyActivity" />
+        <activity
+            android:name=".view.AboutUsPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.PrivacyPolicyPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Contact"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.MyHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addmoney.SendMoneyPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addmoney.Fullkycupdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addmoney.AddMoney"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.RegisteredComplaintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.ComplaintListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.ComplaintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.RecieptActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.SentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.PayBroadBandBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".prepaid.MobilePrepaidTwo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.DthProviderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.DthMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".prepaid.PrepaidRechargeDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".prepaid.MobilePrepaidActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WebViewactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.BroadBandProviderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <receiver android:name=".receiver.NetworkReceiver">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".receiver.MySMSBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBbtqjc_Db618dOEMLjJVWITWti1jxiebQ" />
+    </application>
+
+</manifest>

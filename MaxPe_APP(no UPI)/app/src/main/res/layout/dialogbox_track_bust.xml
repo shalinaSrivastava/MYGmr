@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center|left"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_baseline_check_circle_outline_24"
+                android:padding="3dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/_tChecked1"
+                android:layout_width="wrap_content"
+                android:text="Level 1"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/_tChecked1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/t_view1"
+            android:layout_width="1dp"
+            android:padding="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/color_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:src="@drawable/ic_baseline_check_circle_outline_24"
+                android:padding="3dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/_tChecked2"
+                android:layout_width="wrap_content"
+                android:text="Level 1"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/_tChecked1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/t_view2"
+            android:layout_width="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/_tChecked2"
+            android:padding="3dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/color_gray" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:src="@drawable/ic_baseline_check_circle_outline_24"
+                android:padding="3dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/_tChecked3"
+                android:layout_width="wrap_content"
+                android:text="Level 1"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/_tChecked1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View
+
+            android:id="@+id/t_view3"
+            android:layout_width="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/_tChecked3"
+            android:padding="3dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/color_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:src="@drawable/ic_baseline_check_circle_outline_24"
+                android:padding="3dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/_tChecked4"
+                android:layout_width="wrap_content"
+                android:text="Level 1"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/_tChecked1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            app:tint="@color/grey"
+            android:rotation="90"
+            app:srcCompat="@drawable/ic_baseline_trending_flat_24"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CHAVDA GIRISHBHAI GANPATBHAI"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/vpa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="xber@axis"
+                android:textColor="@color/purple_200"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valid upto"
+                    android:textColor="@color/grey"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05-10-2021 15:30:25"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:id="@+id/expiry"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ "
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/status"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_baseline_error_outline_24"
+            tools:ignore="VectorDrawableCompat"
+            android:translationX="-30dp"
+            app:tint="@color/orange"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greyl" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

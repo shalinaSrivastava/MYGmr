@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1034982375902",
+    "project_id": "maxpe-f2539",
+    "storage_bucket": "maxpe-f2539.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034982375902:android:af354c70b21f6b49d29d4f",
+        "android_client_info": {
+          "package_name": "com.max.ecomaxgo.maxpe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034982375902-bbs6c8784eamu6792cief1vo66018bam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVUW403KItxTJR8h6wjXsvR2shUq0CBP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034982375902-bbs6c8784eamu6792cief1vo66018bam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

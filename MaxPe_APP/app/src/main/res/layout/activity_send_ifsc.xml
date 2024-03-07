@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".upi_bhim.SendIfscActivity">
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        app:srcCompat="@drawable/ic_baseline_check_circle_outline_24"
+                        app:tint="@color/purple_200"
+                        tools:ignore="VectorDrawableCompat" />
+                    <TextView
+                        android:id="@+id/vpa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="ram@axis"
+                        android:gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="25dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pay to -"
+                        android:textSize="13dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/bankLogo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_baseline_account_balance_24"
+                        tools:ignore="VectorDrawableCompat"
+                        android:layout_gravity="bottom"/>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/bankName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Select Bank"
+                        android:textColorHint="@color/grey"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:textColorHint="@color/grey"
+                    android:backgroundTint="@color/grey"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Account Number"
+                    android:textColorHint="@color/grey"
+                    android:backgroundTint="@color/grey"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/ifsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter IFSC Code"
+                    android:textColorHint="@color/grey"
+                    android:backgroundTint="@color/grey"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Amount"
+                    android:textColorHint="@color/grey"
+                    android:backgroundTint="@color/grey"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:textSize="15dp"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Remark (optional)"
+                    android:textColorHint="@color/grey"
+                    android:backgroundTint="@color/grey"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"/>
+
+                <CheckBox
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="Add to Beneficiary"/>
+
+                <Button
+                    android:id="@+id/pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Proceed"
+                    android:padding="15dp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

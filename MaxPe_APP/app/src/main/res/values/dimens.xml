@@ -1,0 +1,55 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="threehundreddp">300dp</dimen>
+    <dimen name="twofiftydp">250dp</dimen>
+
+    <dimen name="activity_horizontal_margin">12dp</dimen>
+    <dimen name="activity_vertical_margin">12dp</dimen>
+    <dimen name="app_font_large">20sp</dimen>
+    <dimen name="app_font_medium">16sp</dimen>
+    <dimen name="app_font_small">12sp</dimen>
+    <dimen name="app_font_xlarge">24sp</dimen>
+    <dimen name="app_font_xxlarge">28sp</dimen>
+    <dimen name="app_margin_regular">10dp</dimen>
+    <dimen name="app_margin_small">5dp</dimen>
+    <dimen name="app_margin_xsmall">2dp</dimen>
+    <dimen name="nav_header_height">210dp</dimen>
+    <dimen name="twentydp">20dp</dimen>
+    <dimen name="hundreddp">100dp</dimen>
+    <dimen name="hundretwentyddp">120dp</dimen>
+    <dimen name="hundredfourtydp">140dp</dimen>
+    <dimen name="hundredfiftydp">150dp</dimen>
+    <dimen name="hundredseventydp">190dp</dimen>
+    <dimen name="twohundreddp">200dp</dimen>
+    <dimen name="fifteendp">15dp</dimen>
+    <dimen name="twentyfivedp">20dp</dimen>
+    <dimen name="thirtydp">30dp</dimen>
+    <dimen name="fourtydp">40dp</dimen>
+    <dimen name="fourtyfivedp">45dp</dimen>
+    <dimen name="fiftydp">50dp</dimen>
+    <dimen name="ninetydp">90dp</dimen>
+    <dimen name="tendp">10dp</dimen>
+    <dimen name="twelvedp">12dp</dimen>
+    <dimen name="sixteendp">16dp</dimen>
+
+    <dimen name="eightdp">8dp</dimen>
+    <dimen name="sixdp">6dp</dimen>
+    <dimen name="fivedp">5dp</dimen>
+    <dimen name="fourdp">4dp</dimen>
+    <dimen name="twodp">2dp</dimen>
+    <dimen name="onedp">1dp</dimen>
+    <dimen name="threedp">3dp</dimen>
+
+
+    <!--sp-->
+    <dimen name="twentysp">20sp</dimen>
+    <dimen name="twentyfivesp">25sp</dimen>
+    <dimen name="tensp">10sp</dimen>
+    <dimen name="twelvesp">12sp</dimen>
+    <dimen name="fourteensp">14sp</dimen>
+    <dimen name="sixteensp">16sp</dimen>
+    <dimen name="fifteensp">15sp</dimen>
+    <dimen name="eighteensp">18sp</dimen>
+
+
+</resources>

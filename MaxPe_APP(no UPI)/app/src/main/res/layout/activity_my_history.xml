@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22adadad"
+    android:orientation="vertical"
+    android:filterTouchesWhenObscured="true"
+    tools:context=".view.MyHistory">
+
+
+    <RelativeLayout
+        android:id="@+id/tbHistory1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlHistory"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/imgBackHistory"
+                android:layout_width="28dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_back_24"/>
+
+            <TextView
+                android:text="History"
+                android:textColor="#fff"
+                android:textSize="19sp"
+                android:layout_toRightOf="@+id/imgBackHistory"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:layout_marginLeft="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imgSearchHistory"
+                android:layout_width="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_height="match_parent"
+                app:tint="@color/white"
+                android:src="@drawable/ic_search"/>
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvHistoryView"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <EditText
+                android:id="@+id/edtSearchHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:focusable="true"
+                android:padding="12dp"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="12dp"
+                android:drawableTint="#adadad"
+                android:hint="Search here...."/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHistory"
+            android:visibility="visible"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/progressHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/llNoHistory"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:text="No History Available"
+            android:textSize="20sp"
+            android:textColor="#808080"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="-12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

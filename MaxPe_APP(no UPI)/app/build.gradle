@@ -1,0 +1,158 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.max.ecomaxgo.maxpe"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 45
+        versionName "7"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //Enabling Data-Binding
+    dataBinding {
+        enabled = true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.games:games-activity:+'
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+    //implementation project(path: ':secure-component-sdk')
+    def retrofit_version = "2.6.0"
+    def OkkHttpVersion = "4.2.0"
+    def KodeinVersion = "6.2.1"
+    def lifecycle_version = "2.2.0"
+    def nav_version = "2.3.5"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //OtpView
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2-ktx'
+    //Country Code Picker Library
+    implementation 'com.hbb20:ccp:2.5.0'
+
+    //Retrofit libs
+    implementation 'com.google.code.gson:gson:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+
+    //Retrofit libs
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:okhttp:$OkkHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$OkkHttpVersion"
+
+    implementation 'com.google.android.gms:play-services-analytics:17.0.0'
+//
+//    //Koin -> Kodein(Kotlin Dependency Injection) library injection dependency...
+    implementation "org.kodein.di:kodein-di-generic-jvm:$KodeinVersion"
+    implementation "org.kodein.di:kodein-di-framework-android-x:$KodeinVersion"
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //Image Loader library......
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
+    // ViewModel and LiveData
+    //implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    //Ixigo setUp
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+
+    //facebook library
+    implementation 'com.facebook.android:facebook-android-sdk:11.1.0'
+    implementation 'com.facebook.android:facebook-applinks:11.1.0'
+    implementation 'com.facebook.android:facebook-share:11.1.0'
+
+    //round image library
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    // Kotlin
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+    //otp auto read
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.4.0'
+
+//    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+//    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
+
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    //textSize
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.android.volley:volley:1.1.0'
+    implementation 'com.google.code.gson:gson:2.4'
+  //pieChart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    implementation "com.github.smarteist:autoimageslider:1.3.9"
+// dependency for loading image from url
+    implementation "com.github.bumptech.glide:glide:4.11.0"
+
+
+}

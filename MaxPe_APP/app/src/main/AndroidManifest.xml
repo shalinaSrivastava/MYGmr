@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.max.ecomaxgo.maxpe">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- Use this permission for reading Barcode Scanner -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".config.DexApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/max_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaxPe"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon, android:allowBackup">
+        <activity
+            android:name=".dashboad.ExpensesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileChangedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dashboad.TravelCardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dashboad.lostfound.LostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dashboad.lostfound.FoundActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dashboad.lostfound.LFCategoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.BhimActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.BhimDashBoardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.VpaNewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.VpaFetchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.TransQueryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.StateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.SimActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.SendUPIActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.SendIfscActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.RequestSendActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.RequestReceivedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.CreateUpiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.CardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.BankListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.BankActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.ActionVpaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.AccountLinkActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.VpaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.option.TransActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.option.SendActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.option.ScanQRActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.option.RequestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.option.QueryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.option.MyQRActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.option.BlockActivity"
+            android:exported="true" />
+        <activity
+            android:name=".upi_bhim.option.BeneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dashboad.lostfound.LostFoundActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashboadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MenuContainerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.ShareIdeaActivity"
+            android:exported="true" />
+        <activity android:name=".dth.BillPaymentSuccess" />
+        <activity android:name=".addmoney.AddMoneyActivity" />
+        <activity android:name=".paybill.PaybillActivity" />
+        <activity android:name=".water.WaterActivity" />
+        <activity android:name=".gas.GasActivity" />
+        <activity android:name=".electricity.ElectricityActivity" />
+        <activity android:name=".dth.BbpsBillerActivity" />
+        <activity android:name=".view.DebitCardActivity" />
+        <activity android:name=".view.UserProifle" />
+        <activity android:name=".quiz.QuizQuestPage" />
+        <activity
+            android:name=".view.AboutUsPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.PrivacyPolicyPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Contact"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.MyHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addmoney.SendMoneyPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addmoney.Fullkycupdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addmoney.AddMoney"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.RegisteredComplaintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.ComplaintListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.ComplaintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.RecieptActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.SentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.PayBroadBandBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".prepaid.MobilePrepaidTwo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.DthProviderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.DthMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".prepaid.PrepaidRechargeDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".prepaid.MobilePrepaidActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                LAUNCHER
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WebViewactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dth.BroadBandProviderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <receiver android:name=".receiver.NetworkReceiver">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".receiver.MySMSBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBbtqjc_Db618dOEMLjJVWITWti1jxiebQ" />
+    </application>
+
+</manifest>

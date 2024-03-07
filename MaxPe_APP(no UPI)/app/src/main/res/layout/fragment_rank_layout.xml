@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/_fregRank_tv"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="_"
+        android:fontFamily="@font/p4"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/_40sdp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/Rs"
+            android:gravity="center|left"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/_fregRankaway_tv"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:text="840"
+            android:layout_gravity="center|right"
+            android:fontFamily="@font/p6"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="  away"
+            android:fontFamily="@font/p6"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center|left"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:weightSum="5"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="@dimen/_40sdp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Rank "
+            android:fontFamily="@font/p6"
+            android:textColor="@color/black"
+            android:padding="@dimen/_3sdp"
+            android:textSize="@dimen/_14sdp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="Name "
+            android:fontFamily="@font/p6"
+            android:textColor="@color/black"
+            android:padding="@dimen/_3sdp"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="Amount  "
+            android:fontFamily="@font/p6"
+            android:textColor="@color/black"
+            android:padding="@dimen/_3sdp"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/_fregRank_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp" />
+
+
+
+
+
+</LinearLayout>

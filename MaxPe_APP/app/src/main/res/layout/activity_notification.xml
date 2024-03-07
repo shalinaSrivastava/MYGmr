@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NotificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="@color/purple_200"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/_Nback"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:src="@drawable/ic_arrow_back_24"
+            android:padding="@dimen/_12sdp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="0dp"
+            android:text="Notification"
+            android:fontFamily="@font/p6"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:padding="@dimen/_3sdp"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center|left"
+            android:layout_weight="9"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/_Notific_list"
+        android:layout_width="match_parent"
+        android:layout_weight="9"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="9"
+        android:orientation="vertical"
+      android:layout_margin="@dimen/_7sdp"
+        android:layout_height="0dp">
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:background="@color/background_white"
+                android:foreground="@drawable/green_ripple"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/_fimgStatus"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:id="@+id/_ftvService"
+                        android:layout_toRightOf="@+id/_fimgStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pay for Electricity"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/_ftvAccount"
+                        android:layout_toRightOf="@+id/_fimgStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="101078544"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:layout_below="@+id/_ftvService"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/_ftvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/_ftvAccount"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/_fimgStatus"
+                        android:singleLine="true"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/_ftvAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/_fivStatus"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/_ftvAmount"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:background="@color/background_white"
+                android:foreground="@drawable/green_ripple"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/_fimgStatus_"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:id="@+id/_ftvService_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/_fimgStatus_"
+                        android:text="Hi Shalina Srivastava....."
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/_ftvAccount_"
+                        android:layout_toRightOf="@+id/_fimgStatus_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grow your money"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:layout_below="@+id/_ftvService_"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/_ftvTime_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/_ftvAccount_"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/_fimgStatus_"
+                        android:singleLine="true"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/_ftvAmount_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:text=""
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/_fivStatus_"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/_ftvAmount_"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".travel.BusActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/stroke_oval_green"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:layout_gravity="center"
+                    android:text="@string/bus"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_gray"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/onlinebus"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:padding="7dp"
+                android:elevation="5dp"
+                android:background="@drawable/stroke_green"
+                android:orientation="vertical">
+
+             <!--   <TextView
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center|left"
+                    android:hint="Select State"
+                    android:padding="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <View
+                    android:id="@+id/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:layout_below="@+id/state"
+
+                    android:layout_height="1dp"
+                    android:background="@color/color_gray" />-->
+
+                <TextView
+                    android:id="@+id/source"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center|left"
+                    android:hint="Source"
+                    android:padding="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <View
+                    android:id="@+id/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:layout_below="@+id/source"
+                    android:layout_height="1dp"
+                    android:background="@color/color_gray" />
+
+                <ImageView
+                    android:id="@+id/flip"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_baseline_swap_vert_24"
+                    android:tint="@color/purple_200" />
+
+                <TextView
+                    android:id="@+id/destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/source"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:hint="Destination"
+                    android:padding="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="7dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:elevation="5dp"
+                android:background="@drawable/stroke_green"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center|left"
+                    android:text="Departure date"
+                    android:padding="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_gray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/selectDate"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:hint="  Select date"
+                    android:padding="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/todayDate"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="40dp"
+                    android:text="Today"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/color_gray" />
+                <TextView
+                    android:id="@+id/tomorrowDate"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Tomorrow"
+                    android:padding="4dp"
+                    android:textColor="@color/color_gray"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            </LinearLayout>
+        <TextView
+            android:id="@+id/busSearch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:text="Search"
+            android:gravity="center"
+            android:padding="4dp"
+            android:background="@color/purple_200"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+    </LinearLayout>
+</RelativeLayout>

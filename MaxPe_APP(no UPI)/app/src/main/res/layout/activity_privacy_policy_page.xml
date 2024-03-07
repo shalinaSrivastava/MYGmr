@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PrivacyPolicyPage"
+    android:filterTouchesWhenObscured="true"
+    android:background="@color/purple_700">
+
+    <LinearLayout
+        android:id="@+id/termsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_700">
+
+        <ImageView
+            android:id="@+id/imgBackPrivacyPolicy"
+            android:layout_width="28dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_back_24"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Privacy Policy"
+            android:layout_marginLeft="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <WebView
+        android:layout_below="@+id/termsToolbar"
+        android:id="@+id/webViewPrivacy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/pbLoadingPrivacy"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

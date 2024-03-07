@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="260dp"
+    android:minHeight="210dp"
+    android:filterTouchesWhenObscured="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgCloseQuizDialogOver"
+            android:src="@drawable/ic_clear_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="45dp"
+            android:elevation="4dp"
+            android:padding="@dimen/eightdp"
+            android:layout_height="45dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvQuizAnsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:cardCornerRadius="14dp">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/ImgQuizAnsd"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pending_history"/>
+
+                <TextView
+                    android:id="@+id/tvAnswerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:text="Time Out"
+                    android:textColor="#FFC107"
+                    android:textSize="28sp"/>
+
+                <TextView
+                    android:id="@+id/tvQuizTryText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="6dp"
+                    android:textStyle="normal"
+                    android:padding="5dp"
+                    android:text="Quiz over, Better luck next time"
+                    android:textColor="#797575"
+                    android:drawablePadding="12dp"
+                    android:textSize="16sp"/>
+
+                <!--<TextView
+                        android:id="@+id/tvQuiztryHint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="4dp"
+                        android:textStyle="normal"
+                        android:padding="4dp"
+                        android:visibility="gone"
+                        android:text="Hint :- Try to answer first to win this Quiz"
+                        android:textColor="#979494"
+                        android:textSize="12sp"/>-->
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

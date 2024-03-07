@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.Contact"
+    android:filterTouchesWhenObscured="true">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                app:srcCompat="@drawable/support_customer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/fifteendp"
+                android:text="Contact Support"
+                android:textColor="#696969"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:layout_marginTop="6dp"
+                android:text="Looking for help with any issue? Feel free \nto contact us."
+                android:textColor="#696969"
+                android:textSize="@dimen/fourteensp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/llSupportCall"
+                    android:visibility="gone"
+                    android:foreground="@drawable/green_ripple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="@dimen/sixdp">
+
+                    <ImageView
+                        android:id="@+id/imgCustService"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:tint="@color/grey"
+                        android:src="@drawable/contact_icon"/>
+
+                    <TextView
+                        android:id="@+id/tvMaxOfficeContact"
+                        android:layout_toRightOf="@+id/imgCustService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginLeft="18dp"
+                        android:layout_centerVertical="true"
+                        android:text="011-41411207"
+                        android:textStyle="normal"
+                        android:textColor="#909090"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/llSupportEmail"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:foreground="@drawable/green_ripple"
+                    android:padding="@dimen/sixdp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:gravity="left"
+                        android:text="support@ecomaxgo.in"
+                        android:textColor="#909090"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnLiveChat"
+                    android:foreground="@drawable/green_ripple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:padding="@dimen/sixdp">
+
+                    <ImageView
+                        android:id="@+id/imgLiveChat"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/live_chat"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/imgLiveChat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginLeft="18dp"
+                        android:layout_centerVertical="true"
+                        android:text="Live Chat"
+                        android:textStyle="normal"
+                        android:textColor="#909090"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

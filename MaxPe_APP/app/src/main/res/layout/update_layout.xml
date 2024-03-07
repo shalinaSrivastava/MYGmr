@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:filterTouchesWhenObscured="true"
+    android:background="@color/purple_700">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="12dp"
+        app:cardElevation="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update App?"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:gravity="center" android:padding="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App recommends that you update to the latest version.You can keep  using the app while downloading the update."
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:padding="6dp"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ud_Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No thanks"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_margin="8dp"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp" />
+
+                <TextView
+                    android:id="@+id/ud_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Update "
+                    android:layout_margin="8dp"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/gpay"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Google Play"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/color_gray"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:paddingRight="46dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
